@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+
+<script type="text/javascript" src="http://ns21.tv/wp-content/themes/nontonstreaming/lib/acomp/js/jquery.autocomplete.min.js"></script>
+<script type="text/javascript">
+        jQuery( document ).ready(function( $ ) {
+            var currencies = '';
+            if (typeof(Storage) != "undefined") {
+                // Store
+                if (localStorage.getItem("sugestvar") === null) {
+                    var jdat='';
+                    $.getJSON("http://ns21.tv/json_ns.storage", function(data){
+                        localStorage.setItem("sugestvar", JSON.stringify(data));
+                        currencies = JSON.parse(localStorage.getItem("sugestvar"));
+                        $('#text-autocomp').autocomplete({
+                            lookup: currencies,
+                            onSelect: function (suggestion) {
+                              window.location = "http://ns21.tv/"+suggestion.data;
+                            }
+                          });
+                    });
+                    localStorage.setItem("waktunya", new Date().getTime());
+                }
+                else
+                {
+
+                    if (localStorage.getItem("waktunya") === null) {
+                        var jdat='';
+                        $.getJSON("http://ns21.tv/json_ns.storage", function(data){
+                            localStorage.setItem("sugestvar", JSON.stringify(data));
+                            currencies = JSON.parse(localStorage.getItem("sugestvar"));
+                            $('#text-autocomp').autocomplete({
+                                lookup: currencies,
+                                onSelect: function (suggestion) {
+                                  window.location = "http://ns21.tv/"+suggestion.data;
+                                }
+                              });
+                        });
+                        localStorage.setItem("waktunya", new Date().getTime());
+                        var wkt = localStorage.getItem("waktunya");
+                    }
+                    else
+                    {
+                        var wkt = localStorage.getItem("waktunya");
+                    }
+                    var a = parseInt(wkt)+3600000;
+                    var b = parseInt(new Date().getTime());
+                    console.log(a+" > "+b);
+                    if(a<b)
+                    {
+                       localStorage.removeItem("sugestvar");
+                        var jdat='';
+                        $.getJSON("http://ns21.tv/json_ns.storage", function(data){
+                            localStorage.setItem("sugestvar", JSON.stringify(data));
+                            currencies = JSON.parse(localStorage.getItem("sugestvar"));
+                            $('#text-autocomp').autocomplete({
+                                lookup: currencies,
+                                onSelect: function (suggestion) {
+                                  window.location = "http://ns21.tv/"+suggestion.data;
+                                }
+                              });
+                        });
+                        localStorage.setItem("waktunya", new Date().getTime());
+                    }
+                    else
+                    {
+                        localStorage.removeItem("sugestvar");
+                        var jdat='';
+                        $.getJSON("http://ns21.tv/json_ns.storage", function(data){
+                            localStorage.setItem("sugestvar", JSON.stringify(data));
+                            currencies = JSON.parse(localStorage.getItem("sugestvar"));
+                            $('#text-autocomp').autocomplete({
+                                lookup: currencies,
+                                onSelect: function (suggestion) {
+                                  window.location = "http://ns21.tv/"+suggestion.data;
+                                }
+                              });
+                        });
+                        localStorage.setItem("waktunya", new Date().getTime());
+                    }
+
+                }
+
+            }
+    });
+</script>
+<div>
+
+
+<h1 class="entry-title">RTV Live</h1>
+<div class="entry">
+<p><script src="http://ns21.tv/jwplayertv/jwplayer.js" type="text/javascript"></script></p>
+<div id="player">Loading the player..</div>
+<p>
+
+<script type="text/javascript">
+    jwplayer("player").setup({
+        file:'rtmp://203.153.97.35/live/livestream',
+        primary: "flash",
+        title: 'NontonStreaming RTV Kriz',
+        autostart: true,
+        skin: 'http://ns21.tv/jwplayertv/five.xml',
+        primary: 'flash',
+        width: '100%',
+autostart: true,
+        height: 550
+    });
+</script>
+
+</p>
+</div>
+</div> 
+<div class="clear"></div>
+
+<div class="clear"></div>
+</div> 
+</div> 
+</div> 
+</div> 
+<script>(function($){$(document).ready(function(){});})(jQuery);</script><script type='text/javascript' src='http://ns21.tv/wp-includes/js/comment-reply.min.js?ver=4.1.1'></script>
+<script type='text/javascript' src='http://ns21.tv/wp-content/themes/nontonstreaming/js/fitvids.min.js?ver=4.0.1'></script>
+<script type='text/javascript' src='http://ns21.tv/wp-content/themes/nontonstreaming/js/jquery.mmenu.min.all.js?ver=4.0.1'></script>
+<script type='text/javascript' src='http://ns21.tv/wp-content/themes/nontonstreaming/js/superfish.min.js?ver=4.0.1'></script>
+<script type='text/javascript' src='http://ns21.tv/wp-content/themes/nontonstreaming/js/functions.js?ver=4.0.1'></script>
+<script type='text/javascript' src='http://ns21.tv/wp-content/themes/nontonstreaming/functions/wpzoom/assets/js/galleria.js'></script>
+<script type='text/javascript' src='http://ns21.tv/wp-content/themes/nontonstreaming/functions/wpzoom/assets/js/wzslider.js'></script>
+
+<script type="text/javascript">
+		jQuery( document ).ready(function( $ ) {
+
+//popup tengah
+if (typeof(Storage) != "undefined") {
+ if (localStorage.getItem("waktupop") === null)
+ {
+    localStorage.setItem("waktupop", new Date().getTime());
+    $("#myModalSingle").modal("show");
+ }
+ else
+ {
+
+    var wkt = localStorage.getItem("waktupop");
+     var tes1 =  Math.round(parseInt(wkt)/1000)+500;
+      var tes2 = Math.round(parseInt(new Date().getTime())/1000);
+    console.log("data a : "+tes1);
+    console.log("data b : "+tes2);
+    if(tes1>tes2)
+    {
+
+    }
+    else
+    {
+        localStorage.removeItem("waktupop");
+        localStorage.setItem("waktupop", new Date().getTime());
+        $("#myModalSingle").modal("show");
+    }
+ }
+}
+else
+{
+	 $("#myModalSingle").modal("show");
+}
+
+
+		/*$('.responsive-slider').slick({
+			  infinite: true,
+			  accessibility:true,
+			  autoplay:true,
+			  autoplaySpeed:3000,
+			  speed: 3000,
+			  slidesToShow: 7,
+			  slidesToScroll: 5,
+			  minChars: 2,
+			  responsive: [
+				{
+				  breakpoint: 1024,
+				  settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+					dots: true
+				  }
+				},
+				{
+				  breakpoint: 600,
+				  settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				  }
+				},
+				{
+				  breakpoint: 480,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				  }
+				}
+			  ]
+			});
+*/
+		  $('.recent-posts').infinitescroll({
+		  loading: {
+			finished: undefined,
+			finishedMsg: "<em>Tidak Menemukan yang dicari? silahkah request di <a href='http://ns21.tv/request'>halaman request</a>.</em>",
+						img: "http://ns21.tv/wp-content/plugins/infinite-scroll/img/ajax-loader.gif",
+			msg: null,
+			msgText: "<em>Harap Tunggu</em>",
+			selector: null,
+			speed: 'fast',
+			start: undefined
+		  },
+		  state: {
+			isDuringAjax: false,
+			isInvalidPage: false,
+			isDestroyed: false,
+			isDone: false, // For when it goes all the way through the archive.
+			isPaused: false,
+			currPage: 1
+		  },
+		  behavior: undefined,
+		  binder: $(window), // used to cache the selector for the element that will be scrolling
+		  nextSelector: ".next",
+		  navSelector: ".navigation",
+		  contentSelector: ".recent-posts", // rename to pageFragment
+		  extraScrollPx: 150,
+		  itemSelector: ".post",
+		  animate: false,
+		  pathParse: undefined,
+		  dataType: 'html',
+		  appendCallback: true,
+		  bufferPx: 40,
+		  errorCallback: function () { },
+		  infid: 0, //Instance ID
+		  pixelsFromNavToBottom: undefined,
+		  path: undefined, // Can either be an array of URL parts (e.g. ["/page/", "/"]) or a function that accepts the page number and returns a URL
+		  maxPage:undefined // to manually control maximum page (when maxPage is undefined, maximum page limitation is not work)
+		});
+		$('.recent-posts').infinitescroll('unbind');
+			$('#mbloadm').on('click', function () {
+				var $btn = $(this).button('loading');
+					$('.recent-posts').infinitescroll('retrieve');
+				$btn.button('reset')
+			  });
+	});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77441700-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+ 
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"jhKQk1a4SBe0Y8", domain:"ns21.tv",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=jhKQk1a4SBe0Y8" style="display:none" height="1" width="1" alt=""/></noscript>
+ 
+<script type="text/javascript" src="//code.poptm.com/38322.js"></script>
+<script id="cid0020000130701335995" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 200px;height: 300px;">{"handle":"nontonstreaminggroup","arch":"js","styles":{"a":"CC0000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"CC0000","l":"CC0000","m":"CC0000","n":"FFFFFF","p":"10","q":"CC0000","r":100,"pos":"br","cv":1,"cvbg":"CC0000","cvw":75,"cvh":30}}</script>
+ 
+ 
+ 
+<script type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
+<a href="http://www.histats.com" target="_blank" title="web tracker"><script type="text/javascript">
+try {Histats.start(1,3031056,4,0,0,0,"");
+Histats.track_hits();} catch(err){};
+</script></a>
+<noscript><a href="http://www.histats.com" target="_blank"><img src="http://sstatic1.histats.com/0.gif?3031056&101" alt="web tracker" border="0"></a></noscript>
+ 
+<script type="text/javascript" src="http://ns21.tv/popunder/jquery-cookie/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://ns21.tv/popunder/src/jquery.popunder.js"></script>
+<script type="text/javascript" src="http://ns21.tv/popunder/ad.js.php"></script>
+<script type="application/ld+json">{"@context":"http://schema.org","@graph":[{"@type":"Organization","name":"NontonStreaming","url":"http://ns21.tv/wp-content/","logo":"http://ns21.tv/wp-content/uploads/2016/04/kotak.png","description": "Nonton Film Online streaming Movie Subtitle Indonesia Download Bioskop Box Office TV Series Drama Korea Android Iphone","sameAs":["https://www.facebook.com/NontonStreamingDotCo/"]},{"@type":"WebSite","url":"http://ns21.tv/wp-content/","name":"NontonStreaming","alternateName":"Nonton Streaming, film online","potentialAction":{"@type":"SearchAction","target":"http://ns21.tv/wp-content//?q={search_term_string}","query-input":"required name=search_term_string"}}]}</script>
+<script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+</html>

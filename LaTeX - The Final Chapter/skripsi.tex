@@ -1,0 +1,110 @@
+\documentclass[
+10pt, % The default document font size, options: 10pt, 11pt, 12pt
+%oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+english, % ngerman for German
+singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+%nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+%liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+%toctotoc, % Uncomment to add the main table of contents to the table of contents
+%parskip, % Uncomment to add space between paragraphs
+%nohyperref, % Uncomment to not load the hyperref package
+headsepline, % Uncomment to get a line under the header
+%chapterinoneline, % Uncomment to place the chapter title next to the number on one line
+%consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
+]{skripsiSTKIP}
+\usepackage[style=apa]{biblatex}
+\DeclareLanguageMapping{bahasai}{american-apa}
+\addbibresource{example.bib} 
+
+\usepackage[autostyle=true]{csquotes}
+
+%----------------------------------------------------------------------------------------
+%	Informasi Mengenai Skripsi
+%----------------------------------------------------------------------------------------
+\thesistitle[panduan]{Judul Skripsi}
+\pembimbingPertama{Pembimbing I} 
+\nikPembimbingPertama{1234567890}
+\pembimbingKedua{Pembimbing II}
+\nikPembimbingKedua{1234567890}
+
+\pengujiPertama{Penguji I}
+\nikPengujiPertama{1234567890}
+\pengujiKedua{Penguji II}
+\nikPengujiKedua{1234567890}
+\pengujiKetiga{Pembimbing I}
+\nikPengujiKetiga{123456789}
+\pengujiKeempat{Pembimbing II}
+\nikPengujiKeempat{123456789}
+
+\kaProdi{Agus Purwanto, Ph.D.}
+\nikKaProdi{0329066203}
+\examiner{}
+\degree{Sarjana Pendidikan (S.Pd.)} 
+\penulis{Nama Kalian}
+\nim{NIM Kalian}
+\addresses{Tangerang}
+\tahun{2017}
+\bulan{Bulan Sidang}
+\tanggal{Tanggal Sidang}
+\hari{Hari Sidang}
+
+\prodi{Pendidikan Fisika}
+\kataKunci{Kata Kunci Abstrak Kalian: fisika gasing, latex, ibna, fismatlan, dll.}
+\institusi{\href{http://www.stkipsurya.ac.id/}{Sekolah Tinggi Keguruan dan Ilmu Pendidikan Surya}}
+\department{\href{http://department.university.com}{Program Studi Pendidikan Matematika}}
+\group{\href{http://researchgroup.university.com}{Research Group Name}}
+\faculty{\href{http://faculty.university.com}{Faculty Name}}
+
+\AtBeginDocument{
+\hypersetup{pdftitle=\ttitle}
+\hypersetup{pdfauthor=\penulis}
+\hypersetup{pdfkeywords=\kataKunciTulis}
+}
+
+\DefineBibliographyStrings{english}{%
+  bibliography = {Daftar Pustaka},
+}
+
+
+\begin{document}
+
+\frontmatter
+
+\pagestyle{plain} 
+
+%----------------------------------------------------------------------------------------
+%	Halaman Awal
+%----------------------------------------------------------------------------------------
+\halamanJudul
+\input{depan/halamanPengesahan}
+\input{depan/halamanPersetujuan}
+\input{depan/halamanKeaslian}
+\input{depan/halamanRingkasan}
+\input{depan/halamanPengantar}
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\mainmatter
+
+\pagestyle{thesis} 
+
+\include{bab/BAB1}
+\include{bab/BAB2}
+\include{bab/BAB3}
+\include{bab/BAB4}
+\include{bab/BAB5}
+
+\appendix 
+
+%----------------------------------------------------------------------------------------
+%	Daftar Pustaka
+%----------------------------------------------------------------------------------------
+
+\printbibliography[heading=bibintoc]
+
+\end{document}  

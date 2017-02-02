@@ -1,0 +1,35 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {bahasai}
+\contentsline {chapter}{Halaman Judul}{i}{Doc-Start}
+\contentsline {chapter}{Pengesahan}{iii}{chapter*.1}
+\contentsline {chapter}{Persetujuan Penguji}{v}{chapter*.2}
+\contentsline {chapter}{Pernyataan Keaslian Skripsi}{vii}{chapter*.4}
+\contentsline {chapter}{Ringkasan}{ix}{chapter*.8}
+\contentsline {chapter}{Kata Pengantar}{xi}{chapter*.9}
+\contentsline {chapter}{\numberline {1}Pendahuluan}{1}{chapter.13}
+\contentsline {section}{\numberline {1.1}Latar Belakang Masalah}{1}{section.14}
+\contentsline {section}{\numberline {1.2}Batasan Masalah}{1}{section.15}
+\contentsline {section}{\numberline {1.3}Rumusan Masalah}{1}{section.16}
+\contentsline {section}{\numberline {1.4}Tujuan Penelitian}{1}{section.17}
+\contentsline {section}{\numberline {1.5}Manfaat Penelitian}{1}{section.18}
+\contentsline {section}{\numberline {1.6}Definisi Operasional}{1}{section.19}
+\contentsline {chapter}{\numberline {2}Kajian Pustaka}{3}{chapter.20}
+\contentsline {section}{\numberline {2.1}Kajian Teori}{3}{section.21}
+\contentsline {section}{\numberline {2.2}Peta Pengembangan Produk}{3}{section.22}
+\contentsline {section}{\numberline {2.3}Kajian Penelitian yang Relevan}{3}{section.23}
+\contentsline {section}{\numberline {2.4}Tujuan Penelitian}{3}{section.24}
+\contentsline {section}{\numberline {2.5}Kerangka Berpikir}{3}{section.25}
+\contentsline {chapter}{\numberline {3}Metode Penelitian}{5}{chapter.26}
+\contentsline {section}{\numberline {3.1}Model Pengembangan}{5}{section.27}
+\contentsline {section}{\numberline {3.2}Prosedur Pengembangan}{5}{section.28}
+\contentsline {section}{\numberline {3.3}Teknik dan Instrumen Pengumpulan Data}{5}{section.29}
+\contentsline {section}{\numberline {3.4}Teknik Analisis Data}{5}{section.30}
+\contentsline {chapter}{\numberline {4}Analisis Temuan dan Pembahasan}{7}{chapter.31}
+\contentsline {section}{\numberline {4.1}Hasil Penelitian}{7}{section.32}
+\contentsline {section}{\numberline {4.2}Proses Uji Coba Produk}{7}{section.33}
+\contentsline {section}{\numberline {4.3}Keunggulan Aplikasi}{7}{section.34}
+\contentsline {chapter}{\numberline {5}Penutup}{9}{chapter.35}
+\contentsline {section}{\numberline {5.1}Simpulan}{9}{section.36}
+\contentsline {section}{\numberline {5.2}Saran}{9}{section.37}
+\contentsline {chapter}{Daftar Pustaka}{11}{appendix*.38}

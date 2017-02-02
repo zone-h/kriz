@@ -1,0 +1,15 @@
+[0] Config.pm:343> INFO - This is Biber 2.5
+[1] Config.pm:346> INFO - Logfile is 'skripsi.blg'
+[51] biber:290> INFO - === Wed Jan 25, 2017, 21:10:05
+[72] Biber.pm:351> INFO - Reading 'skripsi.bcf'
+[168] Biber.pm:776> INFO - Found 5 citekeys in bib section 0
+[184] Biber.pm:3493> INFO - Processing section 0
+[198] Biber.pm:3657> INFO - Looking for bibtex format file 'example.bib' for section 0
+[199] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[200] bibtex.pm:1048> INFO - Found BibTeX data source 'example.bib'
+[234] UCollate.pm:66> INFO - Overriding locale 'id-ID' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[234] UCollate.pm:66> INFO - Overriding locale 'id-ID' defaults 'variable = shifted' with 'variable = non-ignorable'
+[234] Biber.pm:3306> INFO - Sorting list 'apa/global/' of type 'entry' with scheme 'apa' and locale 'id-ID'
+[234] Biber.pm:3310> INFO - No sort tailoring available for locale 'id-ID'
+[241] bbl.pm:526> INFO - Writing 'skripsi.bbl' with encoding 'UTF-8'
+[242] bbl.pm:619> INFO - Output to skripsi.bbl

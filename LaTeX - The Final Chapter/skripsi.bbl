@@ -1,0 +1,186 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{apa/global/}
+    \entry{Reference3}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=fee0c5f3c9a5834476f8ed0e7a45f562}{%
+           family={Arnold},
+           family_i={A\bibinitperiod},
+           given={A.\bibnamedelimi S.},
+           given_i={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{uniquename=0,hash=c2e929fa12fb6367bfb09ffe282c9783}{%
+           family={Wilson},
+           family_i={W\bibinitperiod},
+           given={J.\bibnamedelimi S.},
+           given_i={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{uniquename=0,hash=2d66f6d382b34cd5f6173f01939c0e1e}{%
+           family={Boshier},
+           family_i={B\bibinitperiod},
+           given={M.\bibnamedelimi G.},
+           given_i={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{uniquename=0,hash=83a604a6b15759a8cdb9062300bb8d24}{%
+           family={Smith},
+           family_i={S\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e163e771fc8e42372c02d871af161f4b}
+      \strng{fullhash}{7f58f2d05e1d7eacd72583886d3cde46}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{1998}
+      \field{labelmonth}{3}
+      \field{datelabelsource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Operating a laser diode in an extended cavity which provides frequency-selective feedback is a very effective method of reducing the laser's linewidth and improving its tunability. We have developed an extremely simple laser of this type, built from inexpensive commercial components with only a few minor modifications. A 780~nm laser built to this design has an output power of 80~mW, a linewidth of 350~kHz, and it has been continuously locked to a Doppler-free rubidium transition for several days.}
+      \field{journaltitle}{Review of Scientific Instruments}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{A Simple Extended-Cavity Diode Laser}
+      \field{volume}{69}
+      \field{year}{1998}
+      \field{pages}{1236\bibrangedash 1239}
+      \range{pages}{4}
+      \verb{url}
+      \verb http://link.aip.org/link/?RSI/69/1236/1
+      \endverb
+    \endentry
+    \entry{Reference1}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=8988f23e07d9090950275b050492a047}{%
+           family={Hawthorn},
+           family_i={H\bibinitperiod},
+           given={C.\bibnamedelimi J.},
+           given_i={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{uniquename=0,hash=1101a3cbe4bf0f30b6c956b1777e0620}{%
+           family={Weber},
+           family_i={W\bibinitperiod},
+           given={K.\bibnamedelimi P.},
+           given_i={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{uniquename=0,hash=e8ee8ba89ed6be32bbb65ce92926df7b}{%
+           family={Scholten},
+           family_i={S\bibinitperiod},
+           given={R.\bibnamedelimi E.},
+           given_i={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b94f92065f76a25d131f87fc03614e9}
+      \strng{fullhash}{1573337393a2c4ee5707816de30e3244}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2001}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We have developed an enhanced Littrow configuration extended cavity diode laser (ECDL) that can be tuned without changing the direction of the output beam. The output of a conventional Littrow ECDL is reflected from a plane mirror fixed parallel to the tuning diffraction grating. Using a free-space Michelson wavemeter to measure the laser wavelength, we can tune the laser over a range greater than 10 nm without any alteration of alignment.}
+      \field{journaltitle}{Review of Scientific Instruments}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Littrow Configuration Tunable External Cavity Diode Laser with Fixed Direction Output Beam}
+      \field{volume}{72}
+      \field{year}{2001}
+      \field{pages}{4477\bibrangedash 4479}
+      \range{pages}{3}
+      \verb{url}
+      \verb http://link.aip.org/link/?RSI/72/4477/1
+      \endverb
+    \endentry
+    \entry{APAPurdue}{online}{}
+      \field{sortinit}{o}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelyear}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{Purdue Online Writing Lab}
+      \field{urlday}{03}
+      \field{urlmonth}{01}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb https://owl.english.purdue.edu/owl/resource/560/1/
+      \endverb
+    \endentry
+    \entry{styleGuide}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ff0577b6b298b0aae781cfefc50e9800}{%
+           family={University\bibnamedelima Library},
+           family_i={U\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={American\bibnamedelima University},
+           given_i={A\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff0577b6b298b0aae781cfefc50e9800}
+      \strng{fullhash}{ff0577b6b298b0aae781cfefc50e9800}
+      \field{sortinit}{U}
+      \field{sortinithash}{8145509bd2718876fc77d31fd2cde117}
+      \field{labelyear}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Which style should I use ?}
+      \field{urlday}{03}
+      \field{urlmonth}{01}
+      \field{urlyear}{2016}
+      \verb{url}
+      \verb http://subjectguides.library.american.edu/c.php?g=175008&p=1154150
+      \endverb
+    \endentry
+    \entry{Reference2}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=9d6960fe75bbad0b83d789e2f5620015}{%
+           family={Wieman},
+           family_i={W\bibinitperiod},
+           given={Carl\bibnamedelima E.},
+           given_i={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{uniquename=0,hash=a5386b4ebc6af03f0da52c7512a89dc0}{%
+           family={Hollberg},
+           family_i={H\bibinitperiod},
+           given={Leo},
+           given_i={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{2412544a068946dc865f3bca9063dbbd}
+      \strng{fullhash}{2412544a068946dc865f3bca9063dbbd}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{1991}
+      \field{labelmonth}{1}
+      \field{datelabelsource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a review of the use of diode lasers in atomic physics with an extensive list of references. We discuss the relevant characteristics of diode lasers and explain how to purchase and use them. We also review the various techniques that have been used to control and narrow the spectral outputs of diode lasers. Finally we present a number of examples illustrating the use of diode lasers in atomic physics experiments. Review of Scientific Instruments is copyrighted by The American Institute of Physics.}
+      \field{journaltitle}{Review of Scientific Instruments}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Using Diode Lasers for Atomic Physics}
+      \field{volume}{62}
+      \field{year}{1991}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+      \verb{url}
+      \verb http://link.aip.org/link/?RSI/62/1/1
+      \endverb
+      \keyw{Diode Laser}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
